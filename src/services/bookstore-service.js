@@ -3,12 +3,12 @@ export default class BookstoreService {
         return [
             {
                 id: 1,
-                name: 'crash',
+                title: 'crash',
                 author: 'jo'
             },
             {
-                id: 1,
-                name: 'crash2',
+                id: 2,
+                title: 'crash2',
                 author: 'jo2'
             },
         ];
