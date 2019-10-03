@@ -1,5 +1,16 @@
 .bookListItem {
-    margin: 10px;
+    margin: 20px;
     text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    width: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+.bookDetails {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}

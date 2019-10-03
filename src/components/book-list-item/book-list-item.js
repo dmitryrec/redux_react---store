@@ -12,6 +12,7 @@ const BookListItem = ({ book }) => {
                 <a href="#">{title}</a>
                 <div>{author}</div>
                 <div>{price}</div>
+                <button>add</button>
             </div>
         </div>
     )
