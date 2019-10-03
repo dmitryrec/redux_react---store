@@ -1,20 +1,26 @@
 export default class BookstoreService {
+    data = [
+        {
+            id: 1,
+            title: 'book 1',
+            author: 'author 1',
+            price: '100$',
+            bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
+        },
+        {
+            id: 2,
+            title: 'book 2',
+            author: 'author 2',
+            price: '200$',
+            bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
+        },
+    ];
+
     getBooks() {
-        return [
-            {
-                id: 1,
-                title: 'book 1',
-                author: 'author 1',
-                price: '100$',
-                bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
-            },
-            {
-                id: 2,
-                title: 'book 2',
-                author: 'author 2',
-                price: '200$',
-                bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
-            },
-        ];
+        return new Promise((res, rej)=>{
+            setTimeout(()=> {
+                res(this.data)
+            }, 800)
+        });
     }
 }

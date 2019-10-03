@@ -8,14 +8,18 @@ import './book-list.css'
 class BookList extends Component {
 
         componentDidMount() {
-            const { bookstoreService } = this.props;
-            const data = bookstoreService.getBooks();
-
-            this.props.booksLoaded(data);
+            const { bookstoreService, booksLoaded } = this.props;
+            bookstoreService.getBooks()
+            .then((data)=> booksLoaded(data));
         }
 
         render() {
-            const { books } = this.props;
+            const { books, loading } = this.props;
+
+            if(loading) {
+                return <div>loading...</div>
+            }
+
             return (
                 <ul className="bookList">
                     {
@@ -30,8 +34,8 @@ class BookList extends Component {
         }
     };
 
-const mapStateToProps = ({ books }) => {
-    return { books };
+const mapStateToProps = ({ books, loading }) => {
+    return { books, loading };
 };
 
 const mapDispatchToProps = {
