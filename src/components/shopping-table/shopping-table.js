@@ -21,7 +21,11 @@ const ShoppingTable = ()=> {
                         <td>1</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>1</td>
+                        <td className="actions">
+                            <a className="actions__item">-</a>
+                            <a className="actions__item">+</a>
+                            <a className="actions__item">del</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

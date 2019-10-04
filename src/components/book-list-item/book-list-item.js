@@ -6,7 +6,7 @@ const BookListItem = ({ book }) => {
     return (
         <div className="bookListItem">
             <div className="bookImg">
-                <img src={bookImg}></img>
+                <img src={bookImg} alt="book"></img>
             </div>
             <div className="bookDetails">
                 <a href="#">{title}</a>

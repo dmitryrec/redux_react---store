@@ -11,3 +11,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions__item {
+    margin: 5px;
+}

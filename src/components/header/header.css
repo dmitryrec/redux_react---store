@@ -1,8 +1,14 @@
 .header {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #d3d3d3;
     padding-bottom: 5px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+    text-decoration: none;
+
+}
+
+.header__item {
+    color: blue;
 }
