@@ -5,21 +5,24 @@ export default class BookstoreService {
             title: 'book 1',
             author: 'author 1',
             price: '100$',
-            bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
+            bookImg: 'https://cdn2.iconfinder.com/data/icons/picol-vector/32/book_text-128.png',
         },
         {
             id: 2,
             title: 'book 2',
             author: 'author 2',
             price: '200$',
-            bookImg: 'https://cdn1.iconfinder.com/data/icons/hawcons/32/699301-icon-31-book-bookmark-128.png',
+            bookImg: 'https://cdn2.iconfinder.com/data/icons/picol-vector/32/book_text-128.png',
         },
     ];
 
     getBooks() {
         return new Promise((res, rej)=>{
             setTimeout(()=> {
-                res(this.data)
+                if(Math.random() > .75){
+                 rej(new Error('ERRRRR'));
+                }
+                 res(this.data);
             }, 800)
         });
     }
