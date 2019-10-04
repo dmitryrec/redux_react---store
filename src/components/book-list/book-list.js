@@ -17,7 +17,7 @@ class BookList extends Component {
             const { books, loading } = this.props;
 
             if(loading) {
-                return <div>loading...</div>
+                return <span className="loading">loading...</span>
             }
 
             return (

@@ -1,3 +1,7 @@
 .bookList {
   list-style: none;
 }
+
+.loading{
+  font-size: 50px;
+}
