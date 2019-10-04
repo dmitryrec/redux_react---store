@@ -19,12 +19,12 @@ const ShoppingTable = ()=> {
                     <tr className="tabbleRow">
                         <td>1</td>
                         <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>book 1</td>
+                        <td>100$</td>
                         <td className="actions">
-                            <a className="actions__item">-</a>
-                            <a className="actions__item">+</a>
-                            <a className="actions__item">del</a>
+                            <button className="actions__item">-</button>
+                            <button className="actions__item">+</button>
+                            <button className="actions__item">del</button>
                         </td>
                     </tr>
                 </tbody>

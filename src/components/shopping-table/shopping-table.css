@@ -4,7 +4,8 @@
 
 .table {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    padding: 10px;    
 }
 
 .tabbleRow {
@@ -19,4 +20,5 @@
 
 .actions__item {
     margin: 5px;
+    padding: 5px;
 }
