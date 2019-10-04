@@ -7,7 +7,7 @@ const ShoppingTable = ()=> {
             <h2>you order</h2>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr className="tabbleRow">
                         <th>#</th>
                         <th>Item</th>
                         <th>Count</th>
@@ -16,7 +16,7 @@ const ShoppingTable = ()=> {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr className="tabbleRow">
                         <td>1</td>
                         <td>1</td>
                         <td>1</td>

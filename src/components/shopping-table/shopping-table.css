@@ -3,5 +3,11 @@
 }
 
 .table {
-    
+    display: flex;
+    flex-direction: column;    
+}
+
+.tabbleRow {
+    display: flex;
+    justify-content: space-between;
 }
