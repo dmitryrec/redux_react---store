@@ -5,10 +5,22 @@
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
-    text-decoration: none;
+}
 
+a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
 }
 
 .header__item {
-    color: blue;
+    box-shadow: 0 0 5px rgba(78, 78, 78, 0.5);
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    transition: 1s all ease;
+    padding: 5px;
+}
+
+.header__item:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 3px solid rgb(0, 0, 0);
 }

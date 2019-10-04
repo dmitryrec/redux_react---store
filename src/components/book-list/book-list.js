@@ -43,7 +43,7 @@ const mapStateToProps = ({ books, loading }) => {
 const mapDispatchToProps = {
     booksLoaded,
     booksRequested
-}
+};
 
 export default compose(
     withBookstoreService(),
