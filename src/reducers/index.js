@@ -11,7 +11,6 @@ const reducer = (state = initialState, action) => {
                 books: [],
                 loading: true,
                 error: null
-
             };
         case 'BOOKS_LOADED':
             return {
