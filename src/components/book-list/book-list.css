@@ -1,7 +1,11 @@
 .bookList {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
 }
 
-.loading{
+.loading {
   font-size: 50px;
 }

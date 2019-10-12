@@ -1,7 +1,7 @@
 import React from 'react';
 import './shopping-table.css'
 
-const ShoppingTable = ()=> {
+const ShoppingTable = ({item, total, onInc, onDec, onDel}) => {
     return (
         <div className="shoppingCartTable">
             <div className="headerCartTable"><h2>your order</h2></div>
@@ -29,6 +29,7 @@ const ShoppingTable = ()=> {
                     </tr>
                 </tbody>
             </table>
+            <div>total:</div>
         </div>
     )
 }
