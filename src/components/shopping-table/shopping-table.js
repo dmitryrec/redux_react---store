@@ -4,16 +4,16 @@ import './shopping-table.css'
 const ShoppingTable = ()=> {
     return (
         <div className="shoppingCartTable">
-            <h2>you order</h2>
+            <div className="headerCartTable"><h2>your order</h2></div>
             <table className="table">
                 <thead>
-                    <tr className="tabbleRow">
+                    {/* <tr className="tabbleRow">
                         <th>#</th>
                         <th>Item</th>
                         <th>Count</th>
                         <th>Price</th>
                         <th>Action</th>
-                    </tr>
+                    </tr> */}
                 </thead>
                 <tbody>
                     <tr className="tabbleRow">
@@ -22,9 +22,9 @@ const ShoppingTable = ()=> {
                         <td>book 1</td>
                         <td>100$</td>
                         <td className="actions">
-                            <button className="actions__item">-</button>
-                            <button className="actions__item">+</button>
-                            <button className="actions__item">del</button>
+                            <div className="actions__item">-</div>
+                            <div className="actions__item">+</div>
+                            <div className="actions__item">del</div>
                         </td>
                     </tr>
                 </tbody>

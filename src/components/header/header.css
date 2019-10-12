@@ -1,5 +1,4 @@
 .header {
-    border-bottom: 1px solid #d3d3d3;
     padding: 10px 0px;
     margin-bottom: 5px;
     display: flex;
@@ -9,12 +8,12 @@
 }
 
 a {
-    color: rgb(70, 70, 70);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .header__item {
-    box-shadow: 0 0 5px rgba(78, 78, 78, 0.5);
+    box-shadow: 0 0 15px rgba(1, 53, 102, 0.5);
     border: 3px solid lightgray;
     border-radius: 5px;
     transition: 1s all ease;
@@ -22,6 +21,6 @@ a {
 }
 
 .header__item:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
     border: 3px solid rgb(0, 0, 0);
 }

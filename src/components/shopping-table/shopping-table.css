@@ -1,5 +1,13 @@
 .shoppingCartTable {
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(1, 53, 102, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerCartTable {
+    text-transform: uppercase;
+
 }
 
 .table {
@@ -21,4 +29,9 @@
 .actions__item {
     margin: 5px;
     padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;    
 }
