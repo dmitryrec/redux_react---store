@@ -1,7 +1,22 @@
 import React from 'react';
 import './shopping-table.css'
+import { connect } from 'react-redux';
 
-const ShoppingTable = ({item, total, onInc, onDec, onDel}) => {
+const ShoppingTable = ({items, total, onInc, onDec, onDel}) => {
+    const renderRow = (item, idx) => {
+            const {id, name, count, total} = item;
+               return (<tr className="tabbleRow" key={id}>
+                    <td>{idx + 1}</td>
+                    <td>{name}</td>
+                    <td>{count}</td>
+                    <td>{total}</td>
+                    <td className="actions">
+                        <div onClick={()=>onDec(id)} className="actions__item">-</div>
+                        <div onClick={()=>onInc(id)} className="actions__item">+</div>
+                        <div onClick={()=>onDel(id)} className="actions__item">del</div>
+                    </td>
+                </tr>)
+    }
     return (
         <div className="shoppingCartTable">
             <div className="headerCartTable"><h2>your order</h2></div>
@@ -16,22 +31,35 @@ const ShoppingTable = ({item, total, onInc, onDec, onDel}) => {
                     </tr> */}
                 </thead>
                 <tbody>
-                    <tr className="tabbleRow">
-                        <td>1</td>
-                        <td>1</td>
-                        <td>book 1</td>
-                        <td>100$</td>
-                        <td className="actions">
-                            <div className="actions__item">-</div>
-                            <div className="actions__item">+</div>
-                            <div className="actions__item">del</div>
-                        </td>
-                    </tr>
+                   {
+                       items.map(renderRow)
+                   }
                 </tbody>
             </table>
-            <div>total:</div>
+            <div>total: ${total}</div>
         </div>
     )
 }
 
-export default ShoppingTable;
+const mapStateToProps = ({cartItems, orderTotal}) => {
+    return {
+        items: cartItems,
+        total: orderTotal
+    }
+};
+
+const mapDispatchToProps = () => {
+    return {
+        onInc: (id) => {
+            console.log(`oninc ${id}`)
+        },
+        onDec: (id) => {
+            console.log(`ondec ${id}`)
+        },
+        onDel: (id) => {
+            console.log(`ondel ${id}`)
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShoppingTable);
