@@ -18,6 +18,8 @@ a {
     border-radius: 5px;
     transition: 1s all ease;
     padding: 5px;
+    width: 170px;
+    text-align: center;
 }
 
 .header__item:hover {
