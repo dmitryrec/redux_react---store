@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 
 const ShoppingTable = ({items, total, onInc, onDec, onDel}) => {
     const renderRow = (item, idx) => {
-            const {id, name, count, total} = item;
+            const {id, title, count, total} = item;
                return (<tr className="tabbleRow" key={id}>
                     <td>{idx + 1}</td>
-                    <td>{name}</td>
+                    <td>{title}</td>
                     <td>{count}</td>
-                    <td>{total}</td>
+                    <td>{total} $</td>
                     <td className="actions">
                         <div onClick={()=>onDec(id)} className="actions__item">-</div>
                         <div onClick={()=>onInc(id)} className="actions__item">+</div>

@@ -4,14 +4,14 @@ export default class BookstoreService {
             id: 1,
             title: 'book 1',
             author: 'author 1',
-            price: '100$',
+            price: 100,
             bookImg: 'https://cdn2.iconfinder.com/data/icons/picol-vector/32/book_text-128.png',
         },
         {
             id: 2,
             title: 'book 2',
             author: 'author 2',
-            price: '200$',
+            price: 200,
             bookImg: 'https://cdn2.iconfinder.com/data/icons/picol-vector/32/book_text-128.png',
         },
     ];
