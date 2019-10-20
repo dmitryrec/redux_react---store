@@ -1,7 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Cart = ()=> {
-    return <div>Cart</div>
+
+const Cart = ({total})=> {
+    if(total) {
+       return <div>total: {total} $</div>
+    }
+    return <div>order is empty</div>
 };
 
-export default Cart;
+const mapStateToProps = ({cartItems, orderTotal}) => {
+    return {
+        items: cartItems,
+        total: orderTotal
+    }
+};
+
+export default connect(mapStateToProps)(Cart);
+

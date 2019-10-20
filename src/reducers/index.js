@@ -2,9 +2,7 @@ const initialState = {
     books: [],
     loading: true,
     error: null,
-    cartItems: [
-        
-    ],
+    cartItems: [],
     orderTotal: null
 }
 
