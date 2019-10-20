@@ -36,7 +36,7 @@ const ShoppingTable = ({items, total, onInc, onDec, onDel}) => {
                    }
                 </tbody>
             </table>
-            <div>total: ${total}</div>
+            <div>total: {total} $</div>
         </div>
     )
 }
