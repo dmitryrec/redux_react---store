@@ -1,5 +1,3 @@
-import { stat } from "fs";
-
 const initialState = {
     books: [],
     loading: true,
@@ -53,7 +51,7 @@ const updateOrder = (state, bookId, quantity) => {
                 return {
                     ...state,
                     cartItems: updateCartItems(state.cartItems, newItem, itemIdx),
-                    // orderTotal: state.orderTotal + book.price
+                    orderTotal: state.orderTotal + book.price * quantity
                 };
 };
 
